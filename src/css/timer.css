@@ -1,0 +1,29 @@
+body {
+  margin-left: 40%;
+  margin-top: 10%;
+  background-image: url(../images/timer-image.jpg);
+  background-size: 1600px 1000px;
+}
+.timer {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.datetime-picker {
+  width: 260px;
+  height: 70px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px grey;
+}
+.datetime-picker:hover {
+  background-color: rgb(205, 205, 205);
+}
+button {
+  height: 70px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 2px 2px 1px grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
