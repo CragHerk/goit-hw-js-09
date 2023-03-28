@@ -1,8 +1,12 @@
 body {
-  margin-left: 40%;
-  margin-top: 10%;
   background-image: url(../images/timer-image.jpg);
   background-size: 1600px 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin-top: 10%;
 }
 .timer {
   font-size: 30px;
@@ -26,4 +30,36 @@ button {
   box-shadow: 2px 2px 1px grey;
   border-radius: 5px;
   cursor: pointer;
+}
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+#explosion {
+  display: none;
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+  background-image: url('../images/powerpoint-animation-explosion-clip-art-png-favpng-eRpra7f2Qy5jdk0g0PT7u7XrX.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: explode 1s ease-in-out forwards;
+  z-index: 10;
+}
+p {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -38,6 +38,10 @@ function countdown(date) {
 
     if (time <= 0) {
       clearInterval(intervalId);
+      setTimeout(() => {
+        document.querySelector('#explosion').style.display = 'block';
+        console.log('Obrazek wybuchu powinien teraz być widoczny');
+      }, 500);
     }
   }
 
