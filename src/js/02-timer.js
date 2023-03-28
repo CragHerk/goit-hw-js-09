@@ -45,7 +45,13 @@ function countdown(date) {
 }
 
 function formatTime(time) {
-  return time < 10 ? `0${time}` : time;
+  if (time < 0) {
+    return '00';
+  } else if (time < 10) {
+    return `0${time}`;
+  } else {
+    return time;
+  }
 }
 
 startButton.addEventListener('click', () => {
