@@ -1,6 +1,3 @@
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-
 const options = {
   enableTime: true,
   time_24hr: true,
