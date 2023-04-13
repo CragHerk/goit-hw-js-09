@@ -1,6 +1,4 @@
 body {
-  background-image: url(../images/timer-image.jpg);
-  background-size: 1600px 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +28,10 @@ button {
   box-shadow: 2px 2px 1px grey;
   border-radius: 5px;
   cursor: pointer;
+  background-color: white;
+}
+button:hover {
+  background-color: rgb(205, 205, 205);
 }
 @keyframes explode {
   0% {
